@@ -1,0 +1,67 @@
+body {
+	/*font-family: Ubuntu;*/
+	font-family: Source Sans Pro;
+	font-size: 32px;
+	padding-left: 10%;
+}
+
+body a {
+	color: #444;
+	text-decoration: none;
+}
+
+.main {
+	/*height: 100%;*/
+	display: inline;
+	vertical-align: middle;
+}
+
+.footer {
+	font-size: 16px;
+	bottom: 0;
+	position: absolute;
+	text-align: center;
+	padding-bottom: 10px;
+	/*box-sizing: border-box;*/
+	/*width: 100%;*/
+}
+
+.footer img {
+	height: 16px;
+	width: auto;
+	vertical-align: middle;
+}
+
+ul {
+	display: inline;
+	position: relative;
+}
+
+li {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+li a {
+	padding: 10px;
+	/*background-color: #a5d9ff;*/
+	background-color: #ffca89;
+
+	border-radius: 10px;
+}
+
+
+.show {
+	display: inline;
+  	transition: opacity 500ms;
+  	z-index: 1;
+}
+.hide {
+  	opacity: 0;
+  	z-index: 0;
+}
+
+br {
+	line-height: 2.5;
+}
