@@ -4,17 +4,13 @@ body {
 	font-size: 32px;
 	padding-left: 10%;
 	padding-top: 2.5%;
+	background-color: #fffbef;
+	color: #555;
 }
 
 body a {
-	color: #444;
+	color: #555;
 	text-decoration: none;
-}
-
-.main {
-	/*height: 100%;*/
-	display: inline;
-	vertical-align: middle;
 }
 
 .footer {
@@ -23,8 +19,6 @@ body a {
 	position: absolute;
 	text-align: center;
 	padding-bottom: 10px;
-	/*box-sizing: border-box;*/
-	/*width: 100%;*/
 }
 
 .footer img {
@@ -33,36 +27,60 @@ body a {
 	vertical-align: middle;
 }
 
-ul {
-	display: inline;
-	position: relative;
+table td {
+	box-sizing: border-box;
 }
 
-li {
-	position: absolute;
-	top: 0px;
-	left: 0px;
+ul.options {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
 }
 
-li a {
-	padding: 10px;
+ul.options li {
+	text-align: center;
+}
+
+ul.options li a {
+	/* bluish */
 	/*background-color: #a5d9ff;*/
+
+	/* orange! */
 	background-color: #ffca89;
 
+	padding: 10px;
 	border-radius: 10px;
 }
 
-
 .show {
-	display: inline;
-  	transition: opacity 500ms;
+  	transition: opacity 400ms 200ms;
   	z-index: 1;
 }
+
 .hide {
+  	transition: opacity 200ms;
   	opacity: 0;
   	z-index: 0;
+  	height: 0px;
 }
 
-br {
-	line-height: 2.5;
+.shifter {
+	text-align: center;
+	opacity: 0.3;
+	transition: opacity 200ms;
+}
+
+.shifter:hover {
+	opacity: 0.7;
+}
+
+/* to ensure the whole td is clickable, not just the small sigil */
+.shifter a {
+	display: inline-block;
+	width: 100%;
+}
+
+td {
+	/* for debugging */
+	background-color: #eee;
 }
