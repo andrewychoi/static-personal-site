@@ -1,5 +1,17 @@
 "use strict";
 
+function check_for_vowel() {
+	var current_shown = document.querySelector(".show a");
+	var n = document.querySelector("span.n");
+	var vowels = ["a", "e", "i", "o", "u"];
+	if (vowels.indexOf(current_shown.textContent[0]) >= 0) {
+		n.style.visibility = "visible";
+	}
+	else {
+		n.style.visibility = "hidden";
+	}
+}
+
 function next_option() {
 	var current_shown = document.querySelectorAll(".show")[0];
 	var next_shown = current_shown.nextElementSibling;
@@ -12,6 +24,7 @@ function next_option() {
 
 	next_shown.classList.remove("hide");
 	next_shown.classList.add("show");
+	check_for_vowel();
 }
 
 function prev_option() {
@@ -27,6 +40,7 @@ function prev_option() {
 
 	next_shown.classList.remove("hide");
 	next_shown.classList.add("show");
+	check_for_vowel();
 }
 
 (function() {
@@ -39,6 +53,7 @@ function prev_option() {
 	// show the first one
 	options[0].classList.remove("hide");
 	options[0].classList.add("show");
+	check_for_vowel();
 
 	// set a timer to choose the next option
 	var interval = window.setInterval(next_option, 3000);

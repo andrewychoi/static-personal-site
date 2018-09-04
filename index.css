@@ -13,22 +13,23 @@ body a {
 	text-decoration: none;
 }
 
+.strong {
+	font-weight: bold;
+}
+
 .footer {
 	font-size: 16px;
 	bottom: 0;
 	position: absolute;
 	text-align: center;
 	padding-bottom: 10px;
+	background-color:  #fffbef;
 }
 
 .footer img {
 	height: 16px;
 	width: auto;
 	vertical-align: middle;
-}
-
-table td {
-	box-sizing: border-box;
 }
 
 ul.options {
@@ -48,9 +49,13 @@ ul.options li a {
 	/* orange! */
 	background-color: #ffca89;
 
-	padding: 10px;
+	padding: 7px;
 	border-radius: 10px;
 }
+
+/*.n {
+	transition: visibility 200ms;
+}*/
 
 .show {
   	transition: opacity 400ms 200ms;
@@ -62,10 +67,14 @@ ul.options li a {
   	opacity: 0;
   	z-index: 0;
   	height: 0px;
+	padding: 0px;
 }
 
 .shifter {
+	line-height: 1.5;
+	font-size: 24px;
 	text-align: center;
+	vertical-align: center;
 	opacity: 0.3;
 	transition: opacity 200ms;
 }
@@ -74,13 +83,14 @@ ul.options li a {
 	opacity: 0.7;
 }
 
-/* to ensure the whole td is clickable, not just the small sigil */
+/* to ensure the whole block is clickable, not just the small sigil */
 .shifter a {
+	outline: 0;
 	display: inline-block;
 	width: 100%;
 }
 
 td {
 	/* for debugging */
-	background-color: #eee;
+	/*background-color: #eee;*/
 }
