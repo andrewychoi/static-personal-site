@@ -36,9 +36,6 @@ ul.options {
 	list-style: none;
 	padding: 0px;
 	margin: 0px;
-}
-
-ul.options li {
 	text-align: center;
 }
 
@@ -52,10 +49,6 @@ ul.options li a {
 	padding: 7px;
 	border-radius: 10px;
 }
-
-/*.n {
-	transition: visibility 200ms;
-}*/
 
 .show {
   	transition: opacity 400ms 200ms;
