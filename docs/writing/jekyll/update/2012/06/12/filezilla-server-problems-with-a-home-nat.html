@@ -4,17 +4,19 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>Andrew Choi | Personal blog for Andrew Choi!</title>
+<title>FileZilla server problems with a home NAT | Andrew Choi</title>
 <meta name="generator" content="Jekyll v3.8.4" />
-<meta property="og:title" content="Andrew Choi" />
+<meta property="og:title" content="FileZilla server problems with a home NAT" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Personal blog for Andrew Choi!" />
-<meta property="og:description" content="Personal blog for Andrew Choi!" />
-<link rel="canonical" href="http://www.andrewychoi.com/writing/" />
-<meta property="og:url" content="http://www.andrewychoi.com/writing/" />
+<meta name="description" content="I was just having some problems installing a FileZilla FTP server behind a firewalled NAT, and after considerable trial and error, the solution seems to be to make sure that the server is using a specific set of ports (e.g. 35000 - 35050) and forward those along with the traditional ports (20-21)." />
+<meta property="og:description" content="I was just having some problems installing a FileZilla FTP server behind a firewalled NAT, and after considerable trial and error, the solution seems to be to make sure that the server is using a specific set of ports (e.g. 35000 - 35050) and forward those along with the traditional ports (20-21)." />
+<link rel="canonical" href="http://www.andrewychoi.com/writing/jekyll/update/2012/06/12/filezilla-server-problems-with-a-home-nat.html" />
+<meta property="og:url" content="http://www.andrewychoi.com/writing/jekyll/update/2012/06/12/filezilla-server-problems-with-a-home-nat.html" />
 <meta property="og:site_name" content="Andrew Choi" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2012-06-12T05:05:16-04:00" />
 <script type="application/ld+json">
-{"headline":"Andrew Choi","@type":"WebSite","url":"http://www.andrewychoi.com/writing/","name":"Andrew Choi","description":"Personal blog for Andrew Choi!","@context":"http://schema.org"}</script>
+{"headline":"FileZilla server problems with a home NAT","dateModified":"2012-06-12T05:05:16-04:00","datePublished":"2012-06-12T05:05:16-04:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://www.andrewychoi.com/writing/jekyll/update/2012/06/12/filezilla-server-problems-with-a-home-nat.html"},"url":"http://www.andrewychoi.com/writing/jekyll/update/2012/06/12/filezilla-server-problems-with-a-home-nat.html","description":"I was just having some problems installing a FileZilla FTP server behind a firewalled NAT, and after considerable trial and error, the solution seems to be to make sure that the server is using a specific set of ports (e.g. 35000 - 35050) and forward those along with the traditional ports (20-21).","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/writing/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://www.andrewychoi.com/writing/feed.xml" title="Andrew Choi" /><!-- Global Site Tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126479526-1"></script>
@@ -43,46 +45,20 @@
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="home">
-<h2 class="post-list-heading">Posts</h2>
-    <ul class="post-list"><li><span class="post-meta">Sep 25, 2018</span>
-        <h3>
-          <a class="post-link" href="/writing/jekyll/update/2018/09/25/a16z-trends-capital-disruption.html">
-            A Few Thoughts re: “Technological Trends, Financial Capital, and the Dynamics of Disruption”
-          </a>
-        </h3></li><li><span class="post-meta">Mar 23, 2015</span>
-        <h3>
-          <a class="post-link" href="/writing/jekyll/update/2015/03/23/importerror-undefined-symbol-pyunicodeucs4_asunicodeescapestring.html">
-            ImportError: undefined symbol: PyUnicodeUCS4_AsUnicodeEscapeString
-          </a>
-        </h3></li><li><span class="post-meta">Dec 4, 2014</span>
-        <h3>
-          <a class="post-link" href="/writing/jekyll/update/2014/12/04/custom-model-managers-in-django.html">
-            Custom model Managers in Django
-          </a>
-        </h3></li><li><span class="post-meta">Jul 3, 2012</span>
-        <h3>
-          <a class="post-link" href="/writing/jekyll/update/2012/07/03/assertionerror-no-exception-supplied-in-django-templating.html">
-            AssertionError in Django templating
-          </a>
-        </h3></li><li><span class="post-meta">Jun 19, 2012</span>
-        <h3>
-          <a class="post-link" href="/writing/jekyll/update/2012/06/19/mysql-while-loops-and-different-types-of-variables.html">
-            MySQL WHILE Loops and Different Types of Variables
-          </a>
-        </h3></li><li><span class="post-meta">Jun 14, 2012</span>
-        <h3>
-          <a class="post-link" href="/writing/jekyll/update/2012/06/14/eclipse-pydev-and-ubuntu.html">
-            Eclipse, PyDev, and Ubuntu
-          </a>
-        </h3></li><li><span class="post-meta">Jun 12, 2012</span>
-        <h3>
-          <a class="post-link" href="/writing/jekyll/update/2012/06/12/filezilla-server-problems-with-a-home-nat.html">
-            FileZilla server problems with a home NAT
-          </a>
-        </h3></li></ul>
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
-    <p class="rss-subscribe">subscribe <a href="/writing/feed.xml">via RSS</a></p></div>
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">FileZilla server problems with a home NAT</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2012-06-12T05:05:16-04:00" itemprop="datePublished">Jun 12, 2012
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>I was just having some problems installing a FileZilla FTP server behind a firewalled NAT, and after considerable trial and error, the solution seems to be to make sure that the server is using a specific set of ports (e.g. 35000 - 35050) and forward those along with the traditional ports (20-21).</p>
+
+  </div><a class="u-url" href="/writing/jekyll/update/2012/06/12/filezilla-server-problems-with-a-home-nat.html" hidden></a>
+</article>
 
       </div>
     </main><footer class="site-footer h-card">
