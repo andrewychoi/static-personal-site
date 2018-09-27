@@ -6,5 +6,5 @@ JEKYLL_ENV=production bundle exec jekyll build
 
 echo "Copying to publishing directory..."
 cd _site
-cp -r . ../../writing
+cp -r . ../../docs/writing
 echo "Done"
