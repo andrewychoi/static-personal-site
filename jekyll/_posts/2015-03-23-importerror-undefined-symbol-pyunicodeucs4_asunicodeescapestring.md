@@ -1,10 +1,8 @@
 ---
+title: 'ImportError: undefined symbol: PyUnicodeUCS4_AsUnicodeEscapeString'
 layout: post
-title:  "ImportError: undefined symbol: PyUnicodeUCS4_AsUnicodeEscapeString"
-date:   2015-03-23 13:45:16 -0400
-categories: jekyll update
+date: '2015-03-23 13:45:16 -0400'
 ---
-
 
 `ImportError: ...lib/python2.7/site-packages/numpy/core/multiarray.so: undefined symbol: PyUnicodeUCS4_AsUnicodeEscapeString`
 

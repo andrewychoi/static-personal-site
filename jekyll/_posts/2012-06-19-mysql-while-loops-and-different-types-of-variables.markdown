@@ -2,7 +2,6 @@
 layout: post
 title:  "MySQL WHILE Loops and Different Types of Variables"
 date:   2012-06-19 19:21:29 -0400
-categories: jekyll update
 ---
 
 

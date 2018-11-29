@@ -2,7 +2,6 @@
 layout: post
 title:  "AssertionError in Django templating"
 date:   2012-07-03 19:35:17 -0400
-categories: jekyll update
 ---
 
 Running across this bug is a bit odd, because I wasn't aware of any assertions that I was making, but this was the offending code:

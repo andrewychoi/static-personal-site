@@ -1,8 +1,8 @@
 ---
+title: 'A Few Thoughts re: “Technological Trends, Financial Capital, and the Dynamics
+  of Disruption”'
 layout: post
-title:  "A Few Thoughts re: “Technological Trends, Financial Capital, and the Dynamics of Disruption”"
-date:   2018-09-25 23:17:07 -0400
-categories: jekyll update
+date: '2018-09-25 23:17:07 -0400'
 ---
 
 a16z podcast [here](https://a16z.com/2018/09/23/tech-trends-disruption-innovation-internet-crypto/).
