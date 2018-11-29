@@ -4,19 +4,19 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>ImportError: undefined symbol: PyUnicodeUCS4_AsUnicodeEscapeString | Andrew Choi</title>
+<title>Eclipse, PyDev, and Ubuntu | Andrew Choi</title>
 <meta name="generator" content="Jekyll v3.8.4" />
-<meta property="og:title" content="ImportError: undefined symbol: PyUnicodeUCS4_AsUnicodeEscapeString" />
+<meta property="og:title" content="Eclipse, PyDev, and Ubuntu" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="ImportError: ...lib/python2.7/site-packages/numpy/core/multiarray.so: undefined symbol: PyUnicodeUCS4_AsUnicodeEscapeString" />
-<meta property="og:description" content="ImportError: ...lib/python2.7/site-packages/numpy/core/multiarray.so: undefined symbol: PyUnicodeUCS4_AsUnicodeEscapeString" />
-<link rel="canonical" href="http://www.andrewychoi.com/writing/jekyll/update/2015/03/23/importerror-undefined-symbol-pyunicodeucs4_asunicodeescapestring.html" />
-<meta property="og:url" content="http://www.andrewychoi.com/writing/jekyll/update/2015/03/23/importerror-undefined-symbol-pyunicodeucs4_asunicodeescapestring.html" />
+<meta name="description" content="I just spent an excruciating amount of time trying to figure out what was wrong with my install of Eclipse on Ubuntu 12.04. It turns out that if you attempt to install Eclipse using just sudo apt-get install eclipse or sudo apt-get install eclipse-pde, you are unable to get Eclipse to add plugins. I ended up using the Software Center to install the Eclipse package with a Java development platform, and was then able to add the PyDev and Subclipse plugins to work!" />
+<meta property="og:description" content="I just spent an excruciating amount of time trying to figure out what was wrong with my install of Eclipse on Ubuntu 12.04. It turns out that if you attempt to install Eclipse using just sudo apt-get install eclipse or sudo apt-get install eclipse-pde, you are unable to get Eclipse to add plugins. I ended up using the Software Center to install the Eclipse package with a Java development platform, and was then able to add the PyDev and Subclipse plugins to work!" />
+<link rel="canonical" href="http://www.andrewychoi.com/writing/2012/06/14/eclipse-pydev-and-ubuntu.html" />
+<meta property="og:url" content="http://www.andrewychoi.com/writing/2012/06/14/eclipse-pydev-and-ubuntu.html" />
 <meta property="og:site_name" content="Andrew Choi" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2015-03-23T13:45:16-04:00" />
+<meta property="article:published_time" content="2012-06-14T21:10:28-04:00" />
 <script type="application/ld+json">
-{"headline":"ImportError: undefined symbol: PyUnicodeUCS4_AsUnicodeEscapeString","dateModified":"2015-03-23T13:45:16-04:00","datePublished":"2015-03-23T13:45:16-04:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://www.andrewychoi.com/writing/jekyll/update/2015/03/23/importerror-undefined-symbol-pyunicodeucs4_asunicodeescapestring.html"},"url":"http://www.andrewychoi.com/writing/jekyll/update/2015/03/23/importerror-undefined-symbol-pyunicodeucs4_asunicodeescapestring.html","description":"ImportError: ...lib/python2.7/site-packages/numpy/core/multiarray.so: undefined symbol: PyUnicodeUCS4_AsUnicodeEscapeString","@context":"http://schema.org"}</script>
+{"@type":"BlogPosting","url":"http://www.andrewychoi.com/writing/2012/06/14/eclipse-pydev-and-ubuntu.html","headline":"Eclipse, PyDev, and Ubuntu","dateModified":"2012-06-14T21:10:28-04:00","datePublished":"2012-06-14T21:10:28-04:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://www.andrewychoi.com/writing/2012/06/14/eclipse-pydev-and-ubuntu.html"},"description":"I just spent an excruciating amount of time trying to figure out what was wrong with my install of Eclipse on Ubuntu 12.04. It turns out that if you attempt to install Eclipse using just sudo apt-get install eclipse or sudo apt-get install eclipse-pde, you are unable to get Eclipse to add plugins. I ended up using the Software Center to install the Eclipse package with a Java development platform, and was then able to add the PyDev and Subclipse plugins to work!","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/writing/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://www.andrewychoi.com/writing/feed.xml" title="Andrew Choi" /><!-- Global Site Tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126479526-1"></script>
@@ -48,18 +48,16 @@
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">ImportError: undefined symbol: PyUnicodeUCS4_AsUnicodeEscapeString</h1>
+    <h1 class="post-title p-name" itemprop="name headline">Eclipse, PyDev, and Ubuntu</h1>
     <p class="post-meta">
-      <time class="dt-published" datetime="2015-03-23T13:45:16-04:00" itemprop="datePublished">Mar 23, 2015
+      <time class="dt-published" datetime="2012-06-14T21:10:28-04:00" itemprop="datePublished">Jun 14, 2012
       </time></p>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <p><code class="highlighter-rouge">ImportError: ...lib/python2.7/site-packages/numpy/core/multiarray.so: undefined symbol: PyUnicodeUCS4_AsUnicodeEscapeString</code></p>
+    <p>I just spent an excruciating amount of time trying to figure out what was wrong with my install of Eclipse on Ubuntu 12.04. It turns out that if you attempt to install Eclipse using just <code class="highlighter-rouge">sudo apt-get install eclipse</code> or <code class="highlighter-rouge">sudo apt-get install eclipse-pde</code>, you are unable to get Eclipse to add plugins. I ended up using the Software Center to install the Eclipse package with a Java development platform, and was then able to add the PyDev and Subclipse plugins to work!</p>
 
-<p>The above error means that you've got a Python interpreter compiled against UCS2 trying to run code that was compiled against UCS4. The solution I found was to recompile your lib (here NumPy) using a Python binary compiled with a <code class="highlighter-rouge">--enable-unicode=ucs2</code></p>
-
-  </div><a class="u-url" href="/writing/jekyll/update/2015/03/23/importerror-undefined-symbol-pyunicodeucs4_asunicodeescapestring.html" hidden></a>
+  </div><a class="u-url" href="/writing/2012/06/14/eclipse-pydev-and-ubuntu.html" hidden></a>
 </article>
 
       </div>
