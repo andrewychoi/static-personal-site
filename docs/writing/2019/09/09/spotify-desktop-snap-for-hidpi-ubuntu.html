@@ -1,0 +1,5 @@
+<p>With the new version of Spotify delivered via <code class="highlighter-rouge">snap</code>, the <a href="https://community.spotify.com/t5/Desktop-Linux/Linux-client-barely-usable-on-HiDPI-displays/td-p/1067272">original fix</a> references a <code class="highlighter-rouge">.desktop</code> file that no longer exists. The new desktop file can be found at:</p>
+
+<p><code class="highlighter-rouge">/var/lib/snapd/desktop/applications/spotify_spotify.desktop</code></p>
+
+<p>Adding the requisite <code class="highlighter-rouge">--force-device-scale-factor=2</code> before the <code class="highlighter-rouge">%U</code> in the <code class="highlighter-rouge">Exec</code> line fixed my issue!</p>
