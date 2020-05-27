@@ -1,4 +1,7 @@
-Dealing with ACPI wakeups
+---
+title: Dealing with ACPI wakeups
+layout: post
+---
 
 I've been having an issue with my laptop waking up from sleep after I've closed the lid to send it into suspend. This would drain battery and overheat the laptop, especially when placed into a backpack or bag! Very frustrating to get to wherever you're going and realize that your laptop is dead.
 
