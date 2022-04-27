@@ -46,7 +46,7 @@ ul.options {
 	text-align: center;
 }
 
-ul.options li a {
+.button, ul.options li a {
 	/* bluish */
 	/*background-color: #a5d9ff;*/
 
@@ -59,15 +59,17 @@ ul.options li a {
 
 .show {
   	transition: opacity 400ms 200ms;
-  	z-index: 1;
+  	z-index: 2;
+  	position: relative;
 }
 
 .hide {
   	transition: opacity 200ms;
   	opacity: 0;
-  	z-index: 0;
+  	z-index: 1;
   	height: 0px;
 	padding: 0px;
+	position: absolute;
 }
 
 .shifter {
@@ -93,6 +95,12 @@ ul.options li a {
 td {
 	/* for debugging */
 	/*background-color: #eee;*/
+}
+
+img {
+	max-height: 250px;
+	width: auto;
+	/*object-fit: contain;*/
 }
 
 /* Reactive stuff */
