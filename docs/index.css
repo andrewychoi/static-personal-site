@@ -26,11 +26,6 @@ body a {
 	text-align: center;
 	padding-bottom: 10px;
 	padding-left: 10%;
-	/*background-color:  #f6f6ef;*/
-}
-
-.footer-arrow {
-	display: none;
 }
 
 .footer img {
@@ -39,12 +34,6 @@ body a {
 	vertical-align: middle;
 }
 
-ul.options {
-	list-style: none;
-	padding: 0px;
-	margin: 0px;
-	text-align: center;
-}
 
 .button, ul.options li a {
 	/* bluish */
@@ -55,46 +44,6 @@ ul.options {
 
 	padding: 7px;
 	border-radius: 10px;
-}
-
-.show {
-  	transition: opacity 400ms 200ms;
-  	z-index: 2;
-  	position: relative;
-}
-
-.hide {
-  	transition: opacity 200ms;
-  	opacity: 0;
-  	z-index: 1;
-  	height: 0px;
-	padding: 0px;
-	position: absolute;
-}
-
-.shifter {
-	line-height: 1.5;
-	font-size: 24px;
-	text-align: center;
-	vertical-align: center;
-	opacity: 0.3;
-	transition: opacity 200ms;
-}
-
-.shifter:hover {
-	opacity: 0.7;
-}
-
-/* to ensure the whole block is clickable, not just the small sigil */
-.shifter a {
-	outline: 0;
-	display: inline-block;
-	width: 100%;
-}
-
-td {
-	/* for debugging */
-	/*background-color: #eee;*/
 }
 
 img {
