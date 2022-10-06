@@ -1,7 +1,7 @@
 body {
 	font-family: Source Sans Pro;
 	font-size: 32px;
-	background-color: #f6f6ef;
+	background-color: #eee;
 	color: #555;
 }
 
@@ -26,7 +26,7 @@ body a {
 	text-align: center;
 	padding-bottom: 10px;
 	padding-left: 10%;
-	background-color:  #f6f6ef;
+	/*background-color:  #f6f6ef;*/
 }
 
 .footer-arrow {
