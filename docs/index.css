@@ -10,6 +10,11 @@ body a {
 	text-decoration: none;
 }
 
+p {
+	font-size: 16px;
+	line-height: 1;
+}
+
 .main {
 	padding: 10%;
 	line-height: 2;
@@ -26,6 +31,7 @@ body a {
 	text-align: center;
 	padding-bottom: 10px;
 	padding-left: 10%;
+	background-color: #eee;
 }
 
 .footer img {
@@ -35,7 +41,7 @@ body a {
 }
 
 
-.button, ul.options li a {
+.button {
 	/* bluish */
 	/*background-color: #a5d9ff;*/
 
