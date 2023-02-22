@@ -10,9 +10,12 @@ body a {
 	text-decoration: none;
 }
 
-p {
+.gallery {
 	font-size: 16px;
 	line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .main {
@@ -52,10 +55,13 @@ p {
 	border-radius: 10px;
 }
 
-img {
+.gallery img {
 	max-height: 250px;
 	width: auto;
-	/*object-fit: contain;*/
+}
+
+.gallery div {
+	margin: 10px;
 }
 
 /* Reactive stuff */
